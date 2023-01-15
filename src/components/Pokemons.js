@@ -3,11 +3,8 @@ import { useDispatch, useSelector } from 'react-redux'
 import { fetchPokemons } from '../redux/pokemonsSlice'
 import Loading from './Loading'
 import Paginations from './Paginations'
-import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import axios from 'axios'
-import { display } from '@mui/system'
 
 function Pokemons() {
 
@@ -32,8 +29,6 @@ function Pokemons() {
     handleOpen();
     const res = await axios.get(url);
     const data = res.data;
-    console.log(data)
-    console.log(data)
     setItem(data);
   }
 
