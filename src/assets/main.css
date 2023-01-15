@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #345e3d;
+    color: white;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.pokemons h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.pokemons {
+    max-width: 90%;
+    margin: auto;
+    padding: 40px 0px;
+}
+
+.all {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.cart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 12px #000;
+    padding: 20px;
+    cursor: pointer;
+    transition: 0.3s ease all;
+}
+
+.cart:hover {
+    opacity: 0.6;
+}
+
+.cart img {
+    width: 100px;
+    height: 100px;
+    object-fit: fill;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: white !important;
+}
+
+.pagination button {
+    color: white;
+}
+
+.MuiBox-root {
+    color: #345e3d;
+}
+
+#modal-modal-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.box-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    background: #345e3d;
+    border: 2px solid #000;
+    box-shadow: 0 0 12px #000;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-modal img {
+    width: 150px;
+    height: 150px;
+    object-fit: fill;
+}
+
+.item-bg{
+    background: #345e3d;
+    box-shadow: 0 0 12px #000;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.abilities .item-bg:last-of-type{
+    margin-right: 0px !important;
+}
+
+.abilities{
+    display: flex;
+}
+
+.stats{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    text-align: center;
+    line-height: 2rem;
+}
